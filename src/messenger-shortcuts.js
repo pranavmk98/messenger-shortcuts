@@ -77,12 +77,12 @@ document.body.onkeydown = function(event) {
   // Only combinations of the form Alt+Shift+<key> are accepted
   if (navigator.appVersion.indexOf("Mac")!=-1) {
     // macOS
-    if (!(event.ctrlKey && event.shiftKey)) {
+    if (!(event.ctrlKey)) {
       return;
     }
   } else {
     // other OS
-    if (!(event.altKey && event.shiftKey)) {
+    if (!(event.altKey)) {
       return;
     }
   }
